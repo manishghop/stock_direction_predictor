@@ -2,9 +2,12 @@
 
 <h1>You need to install following packages first</h1>
 <ul><li> Pyqt5</li>
-<li>scikit </li>
+<li>sklearn </li>
+<li>pandas </li>
+<li> numpy </li>
+<li> DBConnection</li>
 </ul>
-
+<p>Go ahead and pip install above packages.</p>
 
 <h2>To run the file simply </h2>
 <h2>Run python home.py or py home.py</h2>
