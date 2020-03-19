@@ -1,0 +1,5 @@
+start	high	close	start(today's)
+43.65	65.00	57.40	23.41	---------> PROFIT
+
+
+43.65	65.00	57.40	50.00	---------> LOSS
