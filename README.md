@@ -1,5 +1,7 @@
 # stock_direction_predictor
 
+
+## PACKAGES
 <h1>You need to install following packages first</h1>
 <ul><li> Pyqt5</li>
 <li>sklearn </li>
@@ -11,6 +13,41 @@
 
 <h2>To run the file simply </h2>
 <h2>Run python home.py or py home.py</h2>
+
+
+
+## DATA-GATHERING
+
+We Gathered data from the yahoo api which lets us access stock market data from any time-period.
+
+
+
+
+## DATA PRE-PROCESSING
+In this step we look for any descrepancies in the dataset. We performed standard scaling to ensure that we normalize the data-set.
+We didn't had any missing values as the yahoo api does it's job exceptionally well.
+
+
+
+
+## FEATURE-ENGINEERING
+As our problem was focussed on stock market direction prediction. We only chose the direction of stock market(Profit(-1) or Loss(1)) for two consecutive days. Rest all features were useless.
+
+
+## MODEL SELECTION
+
+Our problem was a binary classification so we used Logistic Regression, Naive Bayes Model. 
+
+## MODEL EVALUATION & COMPARISION
+Out of these two Naive Bayes Model preformed better.
+
+
+
+## MODEL DEPLOYMENT
+We used Flask framework to deploy our model to the web application. Web-application was very simple in the front-end it asks user the current day stock market value of the company choosen by the user and in the back-end it predicts the next day's stock market direction(Profit(1) or Loss(-1)).
+
+
+## This below block is for school's requirememt.
 
 <p>In getdata file we are creating a table data and storing the values from the dataset
 also we are creating a dataset table to store 3 fields that we are using for prediction 
