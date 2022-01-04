@@ -1,5 +1,5 @@
 # stock_direction_predictor
-
+Stock Market Direction Predictor
 
 ## PACKAGES
 <h1>You need to install following packages first</h1>
