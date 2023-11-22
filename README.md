@@ -1,5 +1,6 @@
 # stock_direction_predictor
 Stock Market Direction Predictor
+- Final Year major project to demonstrate that simple ML models can be powerful for a complex task.
 
 ## PACKAGES
 <h1>You need to install following packages first</h1>
@@ -20,7 +21,7 @@ pip install dbConnect
 ```
 
 
-<h2>To run the file simply </h2>
+<h2>To run the project simply </h2>
 
 Run 
 
@@ -30,7 +31,7 @@ python home.py
 
 
 
-## DATA-GATHERING
+## DATA-COLLECTION
 
 We gathered data from the yahoo api which lets us access stock market data from any time-period.
 
@@ -45,21 +46,21 @@ There were no missing values as the yahoo api does it's job exceptionally well.
 
 
 ## FEATURE-ENGINEERING
-As our problem was focussed on stock market direction prediction. We only chose the direction of stock market(Profit(-1) or Loss(1)) for two consecutive days. Rest all other features were found to be useless.
+As our problem was focussed on stock market direction prediction. We gathered all the features that we seemed good fit. Using pearson correlation to remove the redundant features from our dataset. Turns out, We found the last and second last day number to be useful. So we chose, only chose the direction of stock market(Profit(-1) or Loss(1)) for two consecutive days.
 
 
 ## MODEL SELECTION
 
-Our problem was a binary classification, so we used Logistic Regression & Naive Bayes Model. 
+As Our problem was a binary classification, so we dediced to use Logistic Regression & Naive Bayes Model. 
 
 ## MODEL EVALUATION & COMPARISION
 
-Out of these two, Naive Bayes Model preformed better.
-
-
+We ran the inferencing on the validation dataset using both the models. Out of these two, Naive Bayes Model preformed better.
 
 ## MODEL DEPLOYMENT
-We used Flask framework to deploy our model as a web application. At the web application's front-end we added a textbox where, it asks the user the current day stock market value of the company choosen by the user and in the back-end it predicts the next day's stock market direction(Profit(1) or Loss(-1)).
+We used Flask framework to deploy our model as a web application. At the web application's front-end we added a textbox where, it asks the user the current day stock market value of the company choosen by the user and in the back-end it predicts the next day's stock market direction(Profit(1) or Loss(-1)). 
+
+**Caution**: Don't trust my model for investing your money, this just a demonstration of NB model. I wouldn't trust investing my own money on stock market using a stranger's project.
 
 <!--
 ## This below block is for school's requirememt.
