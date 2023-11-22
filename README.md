@@ -30,34 +30,26 @@ python home.py
 ```
 
 
-
-## DATA-COLLECTION
+## Data-Collection
 
 We gathered data from the yahoo api which lets us access stock market data from any time-period.
 
-
-
-
-## DATA PRE-PROCESSING
+## Data Pre-Processing
 In this step we look for any discrepancies in the dataset. We performed standard scaling to ensure that we normalize the data-set.
 There were no missing values as the yahoo api does it's job exceptionally well.
 
-
-
-
-## FEATURE-ENGINEERING
+## Feature Engineering
 As our problem was focussed on stock market direction prediction. We gathered all the features that we seemed good fit. Using pearson correlation to remove the redundant features from our dataset. Turns out, We found the last and second last day number to be useful. So we chose, only chose the direction of stock market(Profit(-1) or Loss(1)) for two consecutive days.
 
-
-## MODEL SELECTION
+## Model Selection
 
 As Our problem was a binary classification, so we dediced to use Logistic Regression & Naive Bayes Model. 
 
-## MODEL EVALUATION & COMPARISION
+## Model Evaluation
 
 We ran the inferencing on the validation dataset using both the models. Out of these two, Naive Bayes Model preformed better.
 
-## MODEL DEPLOYMENT
+## Model Deployment
 We used Flask framework to deploy our model as a web application. At the web application's front-end we added a textbox where, it asks the user the current day stock market value of the company choosen by the user and in the back-end it predicts the next day's stock market direction(Profit(1) or Loss(-1)). 
 
 **Caution**: Don't trust my model for investing your money, this just a demonstration of NB model. I wouldn't trust investing my own money on stock market using a stranger's project.
