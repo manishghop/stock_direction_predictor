@@ -1,5 +1,4 @@
-# stock_direction_predictor
-Stock Market Direction Predictor
+# Stock Market Direction Predictor
 - Final Year major project to demonstrate that simple ML models can be powerful for a complex task.
 
 ## Requirements
