@@ -3,7 +3,7 @@ Stock Market Direction Predictor
 - Final Year major project to demonstrate that simple ML models can be powerful for a complex task.
 
 ## PACKAGES
-<h1>You need to install following packages first</h1>
+# You need to install following packages first
 <ul><li> Pyqt5</li>
 <li>sklearn </li>
 <li>pandas </li>
